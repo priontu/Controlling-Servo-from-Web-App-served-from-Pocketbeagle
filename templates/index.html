@@ -1,0 +1,29 @@
+
+<html>
+    <head>
+        <h1>LOST LOCK DOOR</h1> 
+    </head>
+    <body>
+        <form method="POST"> 
+            <Label>SET LOCK</Label><br>
+            {% if radio_val == 'ON' %} 
+                <input type="radio" name="option" value="ON" checked/>ON</input><br> 
+            {% else %}
+                <input type="radio" name="option" value="ON"/>ON</input><br> 
+            {% endif %}
+
+            {% if radio_val == 'OFF' %} 
+                <input type="radio" name="option" value="OFF" checked/>OFF</input><br> 
+            {% else %}
+                <input type="radio" name="option" value="OFF"/>OFF</input><br> 
+            {% endif %}
+          
+            <input type="submit" value="SET LOCK" name = "execute">
+        </form>
+    </body>
+</html>
+
+
+
+
+
